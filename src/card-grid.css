@@ -1,0 +1,42 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  max-width: 500px;
+  border: 2px solid black;
+}
+.span-col-3 {
+  grid-column: span 3 / auto;
+}
+
+img {
+  height: 100px;
+  width: 100px;
+}
+
+.col-height {
+  margin: 0;
+}
+.right {
+  float: right;
+}
+
+.submit {
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  margin-right: 10px;
+  border-radius: 10px;
+  font-weight: 600;
+  background-color: black;
+  color: white;
+}
+
+.submit:disabled {
+  background-color: grey;
+}
+
+html {
+  margin-top: 50px;
+  margin-left: auto;
+}

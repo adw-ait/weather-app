@@ -1,17 +1,16 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-
+import React from "react";
+import ReactDOM from "react-dom";
+// import UseStateArray from "./array";
+// import ButtonTest from "./buttonTest";
+// import People from "./people";
+// import Counter from "./counter";
+// import UseEffectBasics from "./UseEffectBasics";
+// import FetchData from "./FetchData";
+import WeatherInfo from "./WeatherInfo";
+// import MultipleReturn from "./multipleReturn";
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+  <React.Fragment>
+    <WeatherInfo />
+  </React.Fragment>,
+  document.getElementById("root")
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
