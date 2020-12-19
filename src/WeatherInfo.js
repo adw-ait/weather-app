@@ -9,9 +9,10 @@ function WeatherInfo() {
   const [errorFetching, seterrorFetching] = useState(false);
 
   const getWeatherDataFromApi = async () => {
+    const apiKey = "Enter your openWeatherMap Api key here";
     const city = inputText;
     const response = await fetch(
-      `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=b28dbe1fbd346ab3d69d7c4c225ca8e0`
+      `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`
     );
     if (response.ok) {
       const responseData = await response.json();
